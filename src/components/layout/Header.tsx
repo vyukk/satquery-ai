@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, LayoutDashboard, Image, History, Database, Cpu, Map, Info } from 'lucide-react';
+import { Menu, X, Sun, Moon, LayoutDashboard, Image, History, Cpu, Map, Info } from 'lucide-react';
 import { useState } from 'react';
 import { clsx } from 'clsx';
 import { useTheme } from '../../context/ThemeContext';
@@ -8,8 +8,6 @@ import { Button } from '../ui';
 const navItems = [
   { path: '/workspace', label: 'Workspace', icon: LayoutDashboard },
   { path: '/change-detection', label: 'Change Detection', icon: Map },
-  { path: '/multimodal', label: 'Multimodal', icon: Image },
-  { path: '/datasets', label: 'Datasets', icon: Database },
   { path: '/models', label: 'Models', icon: Cpu },
   { path: '/history', label: 'History', icon: History },
   { path: '/about', label: 'About', icon: Info },
